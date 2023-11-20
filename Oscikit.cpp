@@ -125,8 +125,9 @@ void Oscikit::ProcessBlock(sample** inputs, sample** outputs, int nFrames)
 {
   const double gain = GetParam(kParamGain)->Value() / 100.;
   const int nChans = NOutChansConnected();
+  const double sRate = GetSampleRate();
 
-  mDSP.ProcessBlock(outputs, nFrames);
+  mDSP.ProcessBlock(outputs, nFrames, sRate);
   
   for (auto s = 0; s < nFrames; s++) {
     for (auto c = 0; c < nChans; c++) {

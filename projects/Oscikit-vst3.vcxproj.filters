@@ -372,10 +372,9 @@
     <ClInclude Include="..\..\..\IPlug\IPlugPluginBase.h">
       <Filter>IPlug</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\IGraphics\ISender.h">
-      <Filter>IGraphics</Filter>
-    </ClInclude>
     <ClInclude Include="..\Oscikit_DSP.h" />
+    <ClInclude Include="..\OSynth.h" />
+    <ClInclude Include="..\OOscillator.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="resources">
